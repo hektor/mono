@@ -1,51 +1,40 @@
 /**
- * Multiplies a value by 2. (Also a full example of TypeDoc's functionality.)
+ * Doubles a number (by addition)
  *
- * ### Example (es module)
+ * ### E.g.
  * ```js
  * import { double } from 'typescript-starter'
- * console.log(double(4))
- * // => 8
+ * double(4) // => 8
  * ```
  *
- * ### Example (commonjs)
- * ```js
- * var double = require('typescript-starter').double;
- * console.log(double(4))
- * // => 8
- * ```
- *
- * @param value - Comment describing the `value` parameter.
- * @returns Comment describing the return type.
- * @anotherNote Some other value.
+ * @param n - Arbitrary number
+ * @returns Number `n` doubled.
  */
-export const double = (value: number) => {
-  return value * 2;
-};
+export const double = (n: number) => n + n;
 
 /**
- * Raise the value of the first parameter to the power of the second using the
- * es7 exponentiation operator (`**`).
+ * Raise the value of the first to the power of the second parameter
  *
- * ### Example (es module)
+ * ### E.g.
  * ```js
- * import { power } from 'typescript-starter'
- * console.log(power(2,3))
- * // => 8
+ * import { exp } from 'typescript-starter'
+ * exp(2,8) // => 256
  * ```
  *
- * ### Example (commonjs)
- * ```js
- * var power = require('typescript-starter').power;
- * console.log(power(2,3))
- * // => 8
- * ```
- * @param base - the base to exponentiate
- * @param exponent - the power to which to raise the base
+ * @param base - base to exponentiate
+ * @param exp  - the power to which to raise the base
+ * @returns Number value of `base` raised to the exponent `exp`
  */
-export const power = (base: number, exponent: number) => {
-  /**
-   * This es7 exponentiation operator is transpiled by TypeScript
-   */
-  return base ** exponent;
-};
+export const exp = (base: number, exp: number) => base ** exp;
+
+/**
+ * TODO: clamp
+ * TODO: isNumber
+ * TODO: inClosed
+ * TODO: inOpen
+ */
+
+export const clamp = () => {};
+export const isNumber = () => {};
+export const inClosedInterval = () => {};
+export const inOpenInterval = () => {};
