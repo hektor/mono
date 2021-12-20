@@ -1,8 +1,8 @@
 # Personal packages
 
-This is a repository containing my personal packages.  At this time the
-repository is merely meant for getting familiar with publishing my own
-packages.  Currently, it consists of a small `numbers` *library*.
+This is a monorepository containing my personal packages.  At this time the
+repository is merely meant for getting familiar with publishing my own packages
+and monorepo's.  Currently, it consists of a small `numbers` *library*.
 
 ## `@hektormisplon/numbers`
 
