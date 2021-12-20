@@ -1,13 +1,13 @@
 {
-  "name": "@hektormisplon/ts-lib",
-  "version": "1.0.1",
-  "description": "ts-lib",
+  "name": "@hektormisplon/utils",
+  "version": "1.0.2",
+  "description": "TypeScript utility libraries",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hektormisplon/ts-lib.git"
+    "url": "git+https://github.com/hektormisplon/utils.git"
   },
   "license": "MIT",
   "keywords": [],
@@ -105,8 +105,8 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/hektormisplon/ts-lib/issues"
+    "url": "https://github.com/hektormisplon/utils/issues"
   },
-  "homepage": "https://github.com/hektormisplon/ts-lib#readme",
+  "homepage": "https://github.com/hektormisplon/utils#readme",
   "author": "hektor.misplon@pm.me"
 }
