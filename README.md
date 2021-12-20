@@ -8,3 +8,7 @@ and monorepo's in general.  Currently, it consists of a small `numbers`
 ## Packages
 
 [`@hektormisplon/numbers`](packages/numbers/README.md)
+
+## Installation
+
+`npm i @hektormisplon/<package>`
