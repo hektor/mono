@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "author": "hektor.misplon@pm.me"
+}
