@@ -106,5 +106,7 @@
     "url": "https://github.com/hektormisplon/packages/issues"
   },
   "homepage": "https://github.com/hektormisplon/packages#readme",
-  "publishConfig": { "access": "public"}
+  "publishConfig": {
+    "access": "public"
+  }
 }
