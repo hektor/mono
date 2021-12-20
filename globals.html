@@ -93,13 +93,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L40">lib/number.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/6b3edcd/src/lib/number.ts#L45">lib/number.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Clamp number between lower and upper bound</p>
+									<p>Clamp number between lower and upper bound.</p>
 								</div>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> { clamp } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;&#x27;</span>
+clamp(<span class="hljs-number">11</span>,<span class="hljs-number">0</span>,<span class="hljs-number">10</span>) <span class="hljs-comment">// =&gt; 11</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -143,12 +146,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L13">lib/number.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/6b3edcd/src/lib/number.ts#L13">lib/number.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Doubles a number (by addition)</p>
+									<p>Double number (by addition).</p>
 								</div>
 								<pre><code class="language-js"><span class="hljs-keyword">import</span> { double } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;&#x27;</span>
 double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8</span>
@@ -180,12 +183,12 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L28">lib/number.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/6b3edcd/src/lib/number.ts#L28">lib/number.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Raise the value of the first to the power of the second parameter</p>
+									<p>Raise value of the first to the power of the second parameter.</p>
 								</div>
 								<p>the power to which to raise the base</p>
 							</div>
@@ -218,13 +221,16 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L63">lib/number.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/6b3edcd/src/lib/number.ts#L79">lib/number.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Check if number is contained in closed interval</p>
+									<p>Check if number is contained within closed interval.</p>
 								</div>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> { inClosedInterval } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;&#x27;</span>
+inClosedInterval(<span class="hljs-number">0</span>,[<span class="hljs-number">0</span>,<span class="hljs-number">5</span>]) <span class="hljs-comment">// =&gt; true</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -255,13 +261,16 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L77">lib/number.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/6b3edcd/src/lib/number.ts#L98">lib/number.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Check if value is contained in open interval</p>
+									<p>Check if value is contained within open interval.</p>
 								</div>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> { inOpenInterval } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;&#x27;</span>
+inOpenInterval(<span class="hljs-number">0</span>,[<span class="hljs-number">0</span>,<span class="hljs-number">5</span>]) <span class="hljs-comment">// =&gt; false</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -292,13 +301,17 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L52">lib/number.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/6b3edcd/src/lib/number.ts#L63">lib/number.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Check if value is number</p>
+									<p>Check if specified value is a number.</p>
 								</div>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> { isNumber } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;&#x27;</span>
+isNumber(<span class="hljs-built_in">Math</span>.PI) <span class="hljs-comment">// =&gt; true</span>
+isNumber([])      <span class="hljs-comment">// =&gt; false</span>
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
