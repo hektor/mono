@@ -32,7 +32,7 @@ export const exp = (base: number, exp: number) => base ** exp;
  *
  * ```js
  * import { clamp } from ''
- * clamp(11,0,10) // => 11
+ * clamp(11,0,10) // => 10
  * ```
  *
  * @param n - Number
