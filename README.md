@@ -1,4 +1,4 @@
-# Personal packages
+# Packages monorepo
 
 This is a monorepository containing my personal packages.  At this time the
 repository is merely meant for getting familiar with publishing my own packages
