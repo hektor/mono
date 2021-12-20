@@ -1,5 +1,5 @@
 /**
- * Doubles a number (by addition)
+ * Double number (by addition).
  *
  * ```js
  * import { double } from ''
@@ -13,7 +13,7 @@
 export const double = (n: number) => n + n;
 
 /**
- * Raise the value of the first to the power of the second parameter
+ * Raise value of the first to the power of the second parameter.
  *
  * ```js
  * import { exp } from ''
@@ -28,7 +28,12 @@ export const double = (n: number) => n + n;
 export const exp = (base: number, exp: number) => base ** exp;
 
 /**
- * Clamp number between lower and upper bound
+ * Clamp number between lower and upper bound.
+ *
+ * ```js
+ * import { clamp } from ''
+ * clamp(11,0,10) // => 11
+ * ```
  *
  * @param n - Number
  * @param a - Lower bound
@@ -41,7 +46,13 @@ export const clamp = (n: number, a: number, b: number): number =>
   n <= a ? a : n >= b ? b : n;
 
 /**
- * Check if value is number
+ * Check if specified value is a number.
+ *
+ * ```js
+ * import { isNumber } from ''
+ * isNumber(Math.PI) // => true
+ * isNumber([])      // => false
+ * ```
  *
  * @param x - Value
  *
@@ -52,7 +63,12 @@ export const clamp = (n: number, a: number, b: number): number =>
 export const isNumber = (x: any): boolean => typeof x === 'number';
 
 /**
- * Check if number is contained in closed interval
+ * Check if number is contained within closed interval.
+ *
+ * ```js
+ * import { inClosedInterval } from ''
+ * inClosedInterval(0,[0,5]) // => true
+ * ```
  *
  * @param n                  - Number
  * @param {[number, number]} - Lower & upper bound
@@ -66,7 +82,12 @@ export const inClosedInterval = (
 ): boolean => n >= a && n <= b;
 
 /**
- * Check if value is contained in open interval
+ * Check if value is contained within open interval.
+ *
+ * ```js
+ * import { inOpenInterval } from ''
+ * inOpenInterval(0,[0,5]) // => false
+ * ```
  *
  * @param n                  - Number
  * @param {[number, number]} - Lower & upper bound
