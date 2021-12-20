@@ -1,13 +1,13 @@
 /**
  * Doubles a number (by addition)
  *
- * ### E.g.
  * ```js
- * import { double } from 'typescript-starter'
+ * import { double } from ''
  * double(4) // => 8
  * ```
  *
  * @param n - Arbitrary number
+ *
  * @returns Number `n` doubled.
  */
 export const double = (n: number) => n + n;
@@ -15,26 +15,66 @@ export const double = (n: number) => n + n;
 /**
  * Raise the value of the first to the power of the second parameter
  *
- * ### E.g.
  * ```js
- * import { exp } from 'typescript-starter'
+ * import { exp } from ''
  * exp(2,8) // => 256
  * ```
  *
  * @param base - base to exponentiate
  * @param exp  - the power to which to raise the base
- * @returns Number value of `base` raised to the exponent `exp`
+ *
+ * @returns number value of `base` raised to the exponent `exp`
  */
 export const exp = (base: number, exp: number) => base ** exp;
 
 /**
- * TODO: clamp
- * TODO: isNumber
- * TODO: inClosed
- * TODO: inOpen
+ * Clamp number between lower and upper bound
+ *
+ * @param n - Number
+ * @param a - Lower bound
+ * @param b - Lower bound
+ *
+ * @returns number `n` clamped between specified bounds
  */
 
-export const clamp = () => {};
-export const isNumber = () => {};
-export const inClosedInterval = () => {};
-export const inOpenInterval = () => {};
+export const clamp = (n: number, a: number, b: number): number =>
+  n <= a ? a : n >= b ? b : n;
+
+/**
+ * Check if value is number
+ *
+ * @param x - Value
+ *
+ * @returns boolean `x` is a number
+ */
+
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+export const isNumber = (x: any): boolean => typeof x === 'number';
+
+/**
+ * Check if number is contained in closed interval
+ *
+ * @param n                  - Number
+ * @param {[number, number]} - Lower & upper bound
+ *
+ * @returns boolean `n` is contained in `[a,b]`
+ */
+
+export const inClosedInterval = (
+  n: number,
+  [a, b]: readonly [number, number]
+): boolean => n >= a && n <= b;
+
+/**
+ * Check if value is contained in open interval
+ *
+ * @param n                  - Number
+ * @param {[number, number]} - Lower & upper bound
+ *
+ * @returns boolean `n` is contained in `]a,b[`
+ */
+
+export const inOpenInterval = (
+  n: number,
+  [a, b]: readonly [number, number]
+): boolean => n > a && n < b;
