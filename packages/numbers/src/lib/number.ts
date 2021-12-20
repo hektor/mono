@@ -1,4 +1,20 @@
 /**
+ * Raise value of the first to the power of the second parameter.
+ *
+ * ```js
+ * import { exp } from ''
+ * exp(2,8) // => 256
+ * ```
+ *
+ * @param base - base to exponentiate
+ * @param pow - the power to which to raise the base
+ *
+ * @returns number value of `base` raised to the exponent `exp`
+ */
+
+export const pow = (base: number, exp: number) => base ** exp;
+
+/**
  * Double number (by addition).
  *
  * ```js
@@ -10,22 +26,8 @@
  *
  * @returns Number `n` doubled.
  */
-export const double = (n: number) => n + n;
 
-/**
- * Raise value of the first to the power of the second parameter.
- *
- * ```js
- * import { exp } from ''
- * exp(2,8) // => 256
- * ```
- *
- * @param base - base to exponentiate
- * @param exp  - the power to which to raise the base
- *
- * @returns number value of `base` raised to the exponent `exp`
- */
-export const exp = (base: number, exp: number) => base ** exp;
+export const double = (n: number) => n + n;
 
 /**
  * Clamp number between lower and upper bound.

@@ -3,7 +3,7 @@ import test from 'ava';
 import {
   clamp,
   double,
-  exp,
+  pow,
   inClosedInterval,
   inOpenInterval,
   isNumber,
@@ -16,9 +16,9 @@ test('double', (t) => {
 });
 
 test('power', (t) => {
-  t.is(exp(2, 0), 1);
-  t.is(exp(2, 1), 2);
-  t.is(exp(2, 4), 16);
+  t.is(pow(2, 0), 1);
+  t.is(pow(2, 1), 2);
+  t.is(pow(2, 4), 16);
 });
 
 test('clamp', (t) => {
