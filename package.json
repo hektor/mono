@@ -1,16 +1,12 @@
 {
-  "name": "@hektormisplon/utils",
+  "name": "@hektormisplon/numbers",
   "version": "1.0.1",
-  "description": "TypeScript utility libraries",
+  "author": "hektor.misplon@pm.me",
+  "license": "MIT",
+  "keywords": [],
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hektormisplon/utils.git"
-  },
-  "license": "MIT",
-  "keywords": [],
   "scripts": {
     "build": "run-p build:*",
     "build:main": "tsc -p tsconfig.json",
@@ -42,7 +38,7 @@
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "dependencies": {},
   "devDependencies": {
@@ -104,9 +100,13 @@
       "**/*.spec.js"
     ]
   },
-  "bugs": {
-    "url": "https://github.com/hektormisplon/utils/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hektormisplon/packages.git"
   },
-  "homepage": "https://github.com/hektormisplon/utils#readme",
-  "author": "hektor.misplon@pm.me"
+  "bugs": {
+    "url": "https://github.com/hektormisplon/packages/issues"
+  },
+  "homepage": "https://github.com/hektormisplon/packages#readme",
+  "publishConfig": { "access": "public"}
 }
