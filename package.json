@@ -1,11 +1,14 @@
 {
-  "name": "ts-lib",
+  "name": "@hektormisplon/ts-lib",
   "version": "1.0.1",
   "description": "ts-lib",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/hektormisplon/ts-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hektormisplon/ts-lib.git"
+  },
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -100,5 +103,10 @@
     "exclude": [
       "**/*.spec.js"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hektormisplon/ts-lib/issues"
+  },
+  "homepage": "https://github.com/hektormisplon/ts-lib#readme",
+  "author": "hektor.misplon@pm.me"
 }
