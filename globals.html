@@ -73,8 +73,8 @@
 								<li class="tsd-kind-function"><a href="globals.html#clamp" class="tsd-kind-icon">clamp</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#double" class="tsd-kind-icon">double</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#exp" class="tsd-kind-icon">exp</a></li>
-								<li class="tsd-kind-function"><a href="globals.html#inclosed" class="tsd-kind-icon">in<wbr>Closed</a></li>
-								<li class="tsd-kind-function"><a href="globals.html#inopen" class="tsd-kind-icon">in<wbr>Open</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#inclosedinterval" class="tsd-kind-icon">in<wbr>Closed<wbr>Interval</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#inopeninterval" class="tsd-kind-icon">in<wbr>Open<wbr>Interval</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#isnumber" class="tsd-kind-icon">is<wbr>Number</a></li>
 							</ul>
 						</section>
@@ -87,24 +87,49 @@
 					<a name="clamp" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> clamp</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">clamp<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">clamp<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/f684157/src/lib/number.ts#L37">lib/number.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L40">lib/number.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>TODO: clamp
-										TODO: isNumber
-										TODO: inClosed
-									TODO: inOpen</p>
+									<p>Clamp number between lower and upper bound</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Number</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>a: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Lower bound</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Lower bound</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>number <code>n</code> clamped between specified bounds</p>
 						</li>
 					</ul>
 				</section>
@@ -118,17 +143,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/f684157/src/lib/number.ts#L13">lib/number.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L13">lib/number.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Doubles a number (by addition)</p>
 								</div>
-								<a href="#eg" id="eg" style="color: inherit; text-decoration: none;">
-									<h3>E.g.</h3>
-								</a>
-								<pre><code class="language-js"><span class="hljs-keyword">import</span> { double } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;typescript-starter&#x27;</span>
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> { double } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;&#x27;</span>
 double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8</span>
 </code></pre>
 							</div>
@@ -158,7 +180,7 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/f684157/src/lib/number.ts#L28">lib/number.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L28">lib/number.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -182,41 +204,81 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>Number value of <code>base</code> raised to the exponent <code>exp</code></p>
+							<p>number value of <code>base</code> raised to the exponent <code>exp</code></p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="inclosed" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> in<wbr>Closed</h3>
+					<a name="inclosedinterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> in<wbr>Closed<wbr>Interval</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">in<wbr>Closed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">in<wbr>Closed<wbr>Interval<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/f684157/src/lib/number.ts#L39">lib/number.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L63">lib/number.ts:63</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if number is contained in closed interval</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Number</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>boolean <code>n</code> is contained in <code>[a,b]</code></p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
-					<a name="inopen" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> in<wbr>Open</h3>
+					<a name="inopeninterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> in<wbr>Open<wbr>Interval</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">in<wbr>Open<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">in<wbr>Open<wbr>Interval<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/f684157/src/lib/number.ts#L40">lib/number.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L77">lib/number.ts:77</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if value is contained in open interval</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Number</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>boolean <code>n</code> is contained in <code>]a,b[</code></p>
 						</li>
 					</ul>
 				</section>
@@ -224,16 +286,33 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 					<a name="isnumber" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Number</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Number<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Number<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/f684157/src/lib/number.ts#L38">lib/number.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/hektormisplon/ts-lib/blob/c6f0278/src/lib/number.ts#L52">lib/number.ts:52</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if value is number</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Value</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>boolean <code>x</code> is a number</p>
 						</li>
 					</ul>
 				</section>
@@ -259,10 +338,10 @@ double(<span class="hljs-number">4</span>) <span class="hljs-comment">// =&gt; 8
 						<a href="globals.html#exp" class="tsd-kind-icon">exp</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#inclosed" class="tsd-kind-icon">in<wbr>Closed</a>
+						<a href="globals.html#inclosedinterval" class="tsd-kind-icon">in<wbr>Closed<wbr>Interval</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#inopen" class="tsd-kind-icon">in<wbr>Open</a>
+						<a href="globals.html#inopeninterval" class="tsd-kind-icon">in<wbr>Open<wbr>Interval</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#isnumber" class="tsd-kind-icon">is<wbr>Number</a>
